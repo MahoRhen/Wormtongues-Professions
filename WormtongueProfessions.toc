@@ -1,0 +1,7 @@
+## Interface: 30300
+## Title: Wormtongue Professions
+## Notes: Wormtongue's profession tracker
+## Author: Maho
+## Version: 0.1
+
+WormtongueProfessions.lua
