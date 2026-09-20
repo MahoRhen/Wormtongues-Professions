@@ -1,0 +1,383 @@
+# WORMTONGUE — DEVELOPMENT ROADMAP
+
+## PHASE 1 — CORE ARCHITECTURE
+
+* [ ] Refactor current codebase
+* [ ] Clean up `createWindow()`
+* [ ] Separate UI creation from data collection
+* [ ] Separate data collection from data processing
+* [ ] Centralize addon constants/configuration
+* [ ] Create reusable UI components
+* [ ] Create centralized event handling
+* [ ] Create centralized update/refresh handling
+* [ ] Establish consistent naming conventions
+* [ ] Establish consistent code formatting
+* [ ] Remove obsolete/testing code
+* [ ] Add useful debug functions
+* [ ] Establish a clean foundation for additional Lua files/modules
+
+## PHASE 2 — PROFESSION SYSTEM
+
+* [ ] Detect all professions on the character
+* [ ] Display profession names
+* [ ] Display profession icons
+* [ ] Display current profession skill
+* [ ] Display profession maximum skill
+* [ ] Display profession progress
+* [ ] Detect secondary professions
+* [ ] Display profession rank/level
+* [ ] Create dedicated profession view
+* [ ] Create profession-specific UI sections
+* [ ] Detect known recipes
+* [ ] Display recipe count
+* [ ] Organize recipes by category
+* [ ] Create recipe list UI
+* [ ] Create recipe detail UI
+* [ ] Add recipe tooltips
+* [ ] Display recipe requirements
+* [ ] Display required profession skill
+* [ ] Determine whether recipe can currently be crafted
+* [ ] Add recipe search
+* [ ] Add recipe filtering
+* [ ] Add collapsible recipe categories
+
+## PHASE 3 — RECIPE & CRAFTING DATA
+
+* [ ] Create internal recipe data structure
+* [ ] Create recipe database
+* [ ] Store recipe IDs
+* [ ] Store recipe names
+* [ ] Store profession association
+* [ ] Store recipe categories
+* [ ] Store required skill level
+* [ ] Store required materials
+* [ ] Store material quantities
+* [ ] Store output item
+* [ ] Determine craftable recipes
+* [ ] Determine partially craftable recipes
+* [ ] Determine unavailable recipes
+* [ ] Add recipe/material relationships
+* [ ] Add "What uses this material?" functionality
+
+## PHASE 4 — INVENTORY SYSTEM
+
+* [ ] Scan player bags
+* [ ] Identify inventory items
+* [ ] Track item quantities
+* [ ] Identify crafting materials
+* [ ] Track profession-related items
+* [ ] Scan bank
+* [ ] Track bank quantities
+* [ ] Track reagent bank if supported
+* [ ] Combine bag + bank quantities
+* [ ] Create material database
+* [ ] Create inventory search
+* [ ] Show where an item is stored
+* [ ] Add inventory refresh/update handling
+* [ ] Display available crafting materials
+* [ ] Compare inventory against recipe requirements
+
+## PHASE 5 — MATERIAL SYSTEM
+
+* [ ] Create material database
+* [ ] Associate materials with recipes
+* [ ] Calculate required materials
+* [ ] Calculate available materials
+* [ ] Calculate missing materials
+* [ ] Display material quantities
+* [ ] Display material shortages
+* [ ] Show recipes using a selected material
+* [ ] Show how many crafts current materials support
+* [ ] Add material search
+* [ ] Add material tooltips
+* [ ] Add "Craftable Now" material/recipe filtering
+
+## PHASE 6 — CRAFTING PLANNER
+
+* [ ] Create crafting planner
+* [ ] Select recipe
+* [ ] Display required materials
+* [ ] Display available materials
+* [ ] Display missing materials
+* [ ] Calculate maximum possible crafts
+* [ ] Support multi-step crafting requirements
+* [ ] Calculate intermediate materials
+* [ ] Build material dependency tree
+* [ ] Add crafting shopping list
+* [ ] Allow multiple recipes in a crafting plan
+* [ ] Save crafting plans
+* [ ] Allow removal/editing of crafting plans
+
+## PHASE 7 — PROFESSION LEVELING ASSISTANT
+
+* [ ] Track current profession skill
+* [ ] Determine recipes usable at current skill
+* [ ] Determine recipes that increase skill
+* [ ] Determine next skill milestones
+* [ ] Recommend available leveling recipes
+* [ ] Compare required materials
+* [ ] Identify recipes already craftable
+* [ ] Identify recipes requiring additional materials
+* [ ] Create profession leveling view
+* [ ] Create suggested crafting progression
+* [ ] Add material requirements for leveling path
+
+## PHASE 8 — SEARCH SYSTEM
+
+* [ ] Create universal Wormtongue search
+* [ ] Search recipes
+* [ ] Search materials
+* [ ] Search inventory
+* [ ] Search professions
+* [ ] Search gathering nodes
+* [ ] Search by item name
+* [ ] Search by recipe name
+* [ ] Search by profession
+* [ ] Search by category
+* [ ] Add search filters
+* [ ] Add search result tooltips
+* [ ] Add search history
+* [ ] Add favorites
+
+## PHASE 9 — GATHERING SYSTEM
+
+* [ ] Create gathering subsystem
+* [ ] Detect gathering professions
+* [ ] Detect gathering actions
+* [ ] Detect gathered items
+* [ ] Detect gathering node/object information
+* [ ] Determine player map/zone
+* [ ] Determine player X/Y coordinates
+* [ ] Record discovered gathering locations
+* [ ] Create node data structure
+* [ ] Create gathering node database
+* [ ] Store node type
+* [ ] Store node name
+* [ ] Store zone/map
+* [ ] Store X/Y coordinates
+* [ ] Store discovery timestamp
+* [ ] Store last-seen timestamp
+* [ ] Track repeated discoveries
+* [ ] Handle duplicate node locations
+* [ ] Update existing node records
+* [ ] Add node database cleanup
+* [ ] Add support for mining nodes
+* [ ] Add support for herb nodes
+* [ ] Add support for fishing locations
+* [ ] Add support for treasure/container locations where appropriate
+* [ ] Support custom Ebonhold gathering nodes
+
+## PHASE 10 — NODE DATABASE / DATA IMPORT
+
+* [ ] Research existing node databases
+* [ ] Research GatherMate data compatibility
+* [ ] Determine Ebonhold-specific node differences
+* [ ] Create Wormtongue node database format
+* [ ] Create node data importer
+* [ ] Normalize imported node data
+* [ ] Support external node database imports
+* [ ] Merge imported data with Wormtongue discoveries
+* [ ] Detect duplicate nodes
+* [ ] Preserve Wormtongue-discovered data
+* [ ] Track source of node data
+* [ ] Track node discovery frequency
+* [ ] Track node last-seen information
+* [ ] Create database export
+* [ ] Create database backup/import system
+
+## PHASE 11 — WORLD MAP
+
+* [ ] Research WoW map API available to Ebonhold
+* [ ] Determine map/zone IDs
+* [ ] Determine coordinate system
+* [ ] Create Wormtongue map interface
+* [ ] Display gathering nodes on world map
+* [ ] Create node icons
+* [ ] Add mining node icons
+* [ ] Add herb node icons
+* [ ] Add fishing icons
+* [ ] Add treasure icons
+* [ ] Add node tooltips
+* [ ] Add node filtering
+* [ ] Filter by profession
+* [ ] Filter by node type
+* [ ] Filter by material
+* [ ] Filter by usable profession level
+* [ ] Add node visibility controls
+* [ ] Add node search
+* [ ] Add map zoom support if available
+* [ ] Add map panning support if available
+
+## PHASE 12 — MINIMAP
+
+* [ ] Create Wormtongue minimap integration
+* [ ] Detect nearby nodes
+* [ ] Calculate node distance
+* [ ] Calculate node direction
+* [ ] Display nearby node icons
+* [ ] Scale icons based on distance
+* [ ] Add node tooltips
+* [ ] Add minimap node filters
+* [ ] Add minimap visibility toggle
+* [ ] Add profession-specific filtering
+* [ ] Add option to hide discovered/known nodes
+* [ ] Add minimap range settings
+
+## PHASE 13 — CHARACTER / ALT DATABASE
+
+* [ ] Create character database
+* [ ] Detect character name
+* [ ] Store profession information
+* [ ] Store recipe information
+* [ ] Store material information
+* [ ] Store character-specific data
+* [ ] Track multiple characters
+* [ ] Track profession levels across characters
+* [ ] Track inventory across characters where possible
+* [ ] Track bank data across characters where possible
+* [ ] Search which character knows a recipe
+* [ ] Search which character has a material
+* [ ] Search which character has a profession
+* [ ] Create account-wide profession overview
+
+## PHASE 14 — PROFESSION COMMAND CENTER
+
+* [ ] Create main Wormtongue dashboard
+* [ ] Profession overview
+* [ ] Recipe overview
+* [ ] Material overview
+* [ ] Inventory overview
+* [ ] Crafting overview
+* [ ] Gathering overview
+* [ ] Character/alt overview
+* [ ] Craftable-now summary
+* [ ] Missing-material summary
+* [ ] Profession leveling summary
+* [ ] Gathering summary
+* [ ] Account-wide summary
+
+## PHASE 15 — QUALITY OF LIFE
+
+* [ ] Add minimap button
+* [ ] Add slash commands
+* [ ] Add movable main window
+* [ ] Add resizable main window
+* [ ] Save window position
+* [ ] Save window size
+* [ ] Add UI scale option
+* [ ] Add settings panel
+* [ ] Add collapsible sections
+* [ ] Add sorting options
+* [ ] Add favorites
+* [ ] Add recipe favorites
+* [ ] Add material favorites
+* [ ] Add chat links where supported
+* [ ] Add crafting notifications
+* [ ] Add gathering notifications
+* [ ] Add optional sounds
+* [ ] Add configurable alerts
+* [ ] Add "Craftable Now" filter
+* [ ] Add "Missing Materials" filter
+* [ ] Add "Known Recipes" filter
+* [ ] Add "Usable by Character" filter
+
+## PHASE 16 — DATA MANAGEMENT
+
+* [ ] Create SavedVariables structure
+* [ ] Separate account-wide data from character data
+* [ ] Add database versioning
+* [ ] Add database migration system
+* [ ] Add corruption/error handling
+* [ ] Add database cleanup
+* [ ] Add data reset options
+* [ ] Add data export
+* [ ] Add data import
+* [ ] Add database backup support
+* [ ] Add debug database inspection
+* [ ] Optimize stored data
+* [ ] Optimize database lookups
+
+## PHASE 17 — POLISH / RELEASE
+
+* [ ] Standardize UI appearance
+* [ ] Standardize fonts
+* [ ] Standardize spacing
+* [ ] Standardize buttons
+* [ ] Standardize tooltips
+* [ ] Add consistent icons
+* [ ] Add error messages
+* [ ] Add user-friendly empty states
+* [ ] Remove debug code
+* [ ] Test fresh installation
+* [ ] Test existing SavedVariables
+* [ ] Test multiple characters
+* [ ] Test missing professions
+* [ ] Test empty inventory
+* [ ] Test large recipe databases
+* [ ] Test large node databases
+* [ ] Test map performance
+* [ ] Test minimap performance
+* [ ] Optimize CPU usage
+* [ ] Optimize memory usage
+* [ ] Update TOC
+* [ ] Update version number
+* [ ] Update changelog
+* [ ] Create release package
+* [ ] Publish release
+* [ ] Document installation
+* [ ] Document features
+* [ ] Document slash commands
+* [ ] Document known limitations
+
+# LONG-TERM IDEAS
+
+* [ ] Automatic profession leveling planner
+* [ ] Account-wide crafting database
+* [ ] Account-wide material database
+* [ ] Crafting shopping lists
+* [ ] Gathering route planner
+* [ ] Node respawn tracking
+* [ ] Node frequency analysis
+* [ ] Custom Ebonhold node database
+* [ ] World-map gathering overlay
+* [ ] Minimap gathering overlay
+* [ ] Profession/material cross-character search
+* [ ] "Who can craft this?" search
+* [ ] "Where can I find this?" search
+* [ ] "What can I make?" search
+* [ ] "What do I need?" search
+* [ ] "What should I craft next?" search
+* [ ] Saved crafting projects
+* [ ] Account-wide profession dashboard
+* [ ] Community-shared node database
+* [ ] Optional imported database support
+* [ ] Wormtongue API/data format for future addons
+
+# CURRENT DEVELOPMENT PRIORITY
+
+1. [ ] Finish current profession UI
+2. [ ] Refactor architecture
+3. [ ] Build profession/recipe data structures
+4. [ ] Build recipe system
+5. [ ] Build inventory/material system
+6. [ ] Build crafting planner
+7. [ ] Build gathering/node database
+8. [ ] Build world-map integration
+9. [ ] Build minimap integration
+10. [ ] Build account/alt system
+11. [ ] Add quality-of-life features
+12. [ ] Polish and release
+
+# RULE FOR FUTURE DEVELOPMENT
+
+Do not add major features directly into large existing functions.
+
+When a system becomes complicated:
+
+* [ ] Identify the responsibility
+* [ ] Move it into its own function/module
+* [ ] Keep data separate from UI
+* [ ] Keep UI separate from logic
+* [ ] Keep reusable systems reusable
+
+Wormtongue should grow as a collection of small systems rather than one giant Lua file.
