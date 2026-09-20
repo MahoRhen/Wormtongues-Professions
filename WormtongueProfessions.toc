@@ -4,4 +4,8 @@
 ## Author: Maho
 ## Version: 0.1
 
-WormtongueProfessions.lua
+Core.lua
+Professions.lua
+UI/Components.lua
+UI/MainWindow.lua
+##WormtongueProfessions.lua
